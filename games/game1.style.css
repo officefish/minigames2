@@ -1,0 +1,103 @@
+
+.random-puzzles {
+    display: grid; 
+    grid-template-columns: repeat(4, minmax(0, 1fr)); 
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 2vh;
+    gap: 3vh;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+  .puzzle, .template {
+    display: grid; 
+    grid-template-columns: repeat(4, minmax(0, 1fr)); 
+    list-style-type: none;
+    padding: 0;
+    /* gap: 1px; */
+    text-transform: uppercase;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; 
+    cursor: pointer;
+  }
+
+
+.restart-wrapper {
+  padding-bottom: 2vh;
+  width: 60%;
+  max-width: 160px;
+}
+ 
+.puzzle:active {
+  transform: scale(0.95);
+}
+
+.puzzle:disabled,
+.puzzle[disabled] {
+  transform: scale(1);
+  cursor: not-allowed;
+}
+
+  .puzzle li {
+    width: 4vh;
+    height: 4vh;
+    /* background-color: aqua; */
+  }
+
+  .template li {
+    width: 5vh;
+    height: 5vh;
+  }
+
+  .color-1 {
+    background-color: #00bcd4;
+  }
+  .color-2 {
+    background-color: #8bc34a;
+  }
+  .color-3 {
+    background-color: #ffc107;
+  }
+  .color-4 {
+    background-color: #ff9800;
+  }
+
+  .template-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vh;
+    height: 20vh;
+    user-select: none;
+  }
+
+  .score span {
+    font-size: 3.5rem;
+    font-weight: 800;
+    
+  }
+
+  .score label {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .text-win {
+    color: #8bc34a;
+  }
+
+  .text-lose {
+    color: crimson;
+  }
+
+  

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/875cec1d0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./game3.style.css">
+    <script src="./game3.js" defer></script>
+    <title>Hanoy tower</title>
+</head>
+<body>
+    <div class=" slider-thumb">
+        <section>
+            <div id="canves" class="box">
+                <!-- <div class="restart"><i class="fa fa-repeat"></i></div> -->
+                <h2 id="count">0</h2>
+                <div class="towers">
+                    <ul class="tower" id="tower-1"></ul>
+                    <ul class="tower" id="tower-2"></ul>
+                    <ul class="tower" id="tower-3"></ul>
+                </div>
+                <div class="restart-wrapper">
+                    <input class="btn" type="button" value="restart" onclick="initGame()" />
+                </div>
+              </div>
+        </section>
+    </div>
+   
+</body>
+<script>
+  localStorage.setItem("numDisks", 3)
+  localStorage.setItem("redirect", '../menu.html')
+</script>
+</html>

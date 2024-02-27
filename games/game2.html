@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./game2.style.css">
+    <script src="./game2.js" defer></script>
+    <title>Words game</title>
+</head>
+<body>
+    <div class=" slider-thumb">
+        <section>
+            <div class="random-wrapper">
+                <ul class="quiz-letters"></ul>
+                <div  class="timewatch">
+                    <p id="timer">00:00:01</p>
+                </div>
+                <ul class="random-letters"></ul>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    localStorage.setItem("gameTime", 1500)
+    localStorage.setItem("redirect", '../menu.html')
+</script>
+</html>

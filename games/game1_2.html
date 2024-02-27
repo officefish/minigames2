@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./game1.style.css">
+    <script src="./game1.js" defer></script>
+    <title>Puzzle</title>
+</head>
+<body>
+    <div class=" slider-thumb">
+        <section>
+            <div class="random-wrapper">
+                
+                <div class="template-wrapper">
+                    
+                    <div class="score text-win">
+                        <span id="winFrame">0</span>
+                        <label>wins</label>
+                    </div>
+                    
+                    <ul class="template"></ul>
+                    
+                    <div class="score text-lose">
+                        <span id="loseFrame">0</span>
+                        <label>loses</label>
+                    </div>
+                
+                </div>
+
+                <div  class="timewatch">
+                    <p id="timer">00:00:01</p>
+                </div>
+                
+                <ul class="random-puzzles"></ul>
+
+                <div class="restart-wrapper">
+                    <input class="btn" type="button" value="restart" onclick="initGame()" />
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+     localStorage.setItem("gameTime", 1500) 
+     //localStorage.setItem('numPatters', 8) 
+     localStorage.setItem("redirect", '../menu.html')
+</script>
+
+</html>
